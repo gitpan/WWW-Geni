@@ -16,7 +16,7 @@ binmode STDERR, ":utf8";
 ##############################################################################
 {
 package WWW::Geni;
-our $VERSION = '0.1.0';
+our $VERSION = '0.2.0';
 our $geni;
 # Profile APIs
 # Returns a data structure containing the immediate family of the requested
@@ -592,15 +592,25 @@ Describes a single Geni profile.
 Get the new-style ID of the profile, which is in the form "profile-0000000000", or if it is not known, the old-style ID, which is in the form "G00000000000000000".
 
 =head3 $profile->first_name()
+
 =head3 $profile->middle_name()
+
 =head3 $profile->last_name()
+
 =head3 $profile->maiden_name()
+
 =head3 $profile->display_name()
+
 =head3 $profile->gender()
+
 =head3 $profile->birth_date()
+
 =head3 $profile->birth_location()
+
 =head3 $profile->death_date()
+
 =head3 $profile->death_location()
+
 =head3 $profile->locked()
 
 Returns 1 if profile is locked, 0 if profile is not locked.
